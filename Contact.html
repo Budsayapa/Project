@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+body {
+  background-color: rgb(64, 81, 83);
+}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <center><h3 class="w3-wide"><b>Pretty Boy Gear</b></h3></center>
+    <center><img src="PB4.png" alt="Logo" style="width:80%"> </center> <!--Logo--> 
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="T-shirt.html" class="w3-bar-item w3-button">T-shirt</a>  <!--คลิก T-shirt เพื่อไปหน้า T-shirt catalog-->
+    <a href="Pants.html" class="w3-bar-item w3-button">Pants</a>  <!--คลิก Pants เพื่อไปหน้า Pants catalog-->
+    <a href="Bag.html" class="w3-bar-item w3-button">Bag</a>   <!--คลิก Bag เพื่อไปหน้า Bag catalog-->
+    <a href="Hats.html" class="w3-bar-item w3-button">Hats</a>  <!--คลิก Hats เพื่อไปหน้า Hats catalog-->
+    <a href="Jewelry.html" class="w3-bar-item w3-button">Jewelry</a>  <!--คลิก Jewelry เพื่อไปหน้า Jewelry catalog-->
+    <a href="Socks.html" class="w3-bar-item w3-button">Socks</a>  <!--คลิก Socks เพื่อไปหน้า Socks catalog-->
+    <a href="Sandals.html" class="w3-bar-item w3-button">Sandals</a>  <!--คลิก Sandals เพื่อไปหน้า Sandals catalog-->
+    <a href="Payment.html" class="w3-bar-item w3-button">Payment</a>  <!--คลิก Payment เพื่อไปใส่ข้อมูลการชำระเงินหน้า Payment-->
+  </div>
+  <a href="Contact.html" class="w3-bar-item w3-button w3-padding">Contact</a> <!--คลิก Contact เพื่อไปหน้า Contact us-->
+</nav>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
+body {
+  background-color: rgb(64, 81, 83); }
+
 input[type=text], select, textarea {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   resize: vertical;
 }
 
@@ -32,32 +73,49 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #rgb(64, 81, 83);
   padding: 20px;
+ 
 }
 </style>
 </head>
 <body>
+  
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;} </style>
 
-<h2>Contact us</h2>
+<center><h1><font color="lightgray">Contact</font></h1></center>
 
 <div class="container">
   <form action="/action_page.php">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="name"><font color="lightgray">Name</font></label>
+    <center><input type="text" id="name" name="name" placeholder="Your name.."><br></center>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <label for="Email">Email</label>
-    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+    <label for="Email"><font color="lightgray">Email</font></label>
+    <center><input type="text" id="Email" name="Email" placeholder="Your Email.."><br></center>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <label for="lname">Subject</label>
-    <input type="text" id="Subject" name="Subject" placeholder="Write subject..">
+    <label for="lname"><font color="lightgray">Subject</font></label>
+    <center><input type="text" id="Subject" name="Subject" placeholder="Write subject.."><br></center>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     
 
-    <label for="Message">Message</label>
-    <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="Message"><font color="lightgray">Message</font></label>
+    <center><textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea><br><br></center>
 
-    <input type="submit" value="Submit">
+    <center><input type="submit" value="Submit"></center>
   </form>
 </div>
 
