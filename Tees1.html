@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--แบบตัวอักษร และขนาดตัวอักษร สีพื้นหลัง-->
+<style>
+   .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;} 
+
+  body {
+  background-color: rgb(64, 81, 83);
+}
+</style>
+<body>
+
+<div class="w3-container w3-text-light-grey"><!--สีตัวอักษร-->
+  <h2>Full Print Pretty Boy Gear T-shirt</h2><!---ขนาด และข้อความส่วนหัวของเว็บ-->
+</div>
+
+<!--แบ่ง grid-->
+<div class="w3-row">
+  <div class="w3-col s9 w3-white w3-center"><!--ขนาดของ grid ด้านซ้าย 75% พื้นหลังสีขาว ตั้งตรงกลาง-->      
+      
+      <div class="w3-content" style="max-width:410px"><!--ที่ตั้งรูปอยู่ตรงกลาง และขนาดของรูป-->
+
+        <!--ลำดับรูปที่โชว์ โดยรูปที่2จะขึ้นก่อน และสามารถกดรูปต่อไปที่ต้องการให้ขึ้นโชว์ได้-->
+        <img class="mySlides" src="Tees1.jpg" style="width:100%;display:none">
+        <img class="mySlides" src="Tees1.1.jpg" style="width:100%">
+        <img class="mySlides" src="Tees1.2.jpg" style="width:100%;display:none">
+
+      <!--ขนาดรูปเล็กด้านล่างรูปใหญ่ และการเรียงลำดับรูปเล็ก-->
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="Tees1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)"><!--รูปภาพสำหรับคลิกเพื่อดูรูปที่1-->
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="Tees1.1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"><!--รูปภาพสำหรับคลิกเพื่อดูรูปที่2-->
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="Tees1.2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)"><!--รูปภาพสำหรับคลิกเพื่อดูรูปที่3-->
+          </div>
+        </div>
+      </div>
+      
+      <script>
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-opacity-off";
+      }
+      </script></p>
+  </div>
+
+  <!--แบ่ง grid-->
+  <div class="w3-col s3 w3-grey w3-center"><!--ขนาดของ grid ด้านขวา 25% พื้นหลังสีเทา ตั้งตรงกลาง-->
+    <p>Full Print Pretty Boy Gear T-shirt (L/S) </p>
+    <h6>$45.00</h6>
+    <hr>
+    <p>Size Chart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chest Length</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20" 27.5"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21" 28.5"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22" 29.5"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;XL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23" 30.5"</p>
+    <p>&nbsp;&nbsp;&nbsp;XXL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24" 31.5"</p>
+     <div class="w3-display-middle w3-display-hover"></div>
+     <center><a href="Cart.html" style="text-decoration: none;"><button class="w3-button w3-black">Add to Cart<i class="fa fa-shopping-cart"></i></button></center></div></a> <!--ปุ่มหยิบสินค้าใส่ตะกร้า-->
+       
+  </div>
+</div>
+
+
+
+</body>
+</html>
